@@ -19,7 +19,7 @@ New Ideas
 |---|---|---|
 | [Enable CUDA builds on CI](#Enable-CUDA-builds-on-CI) | CUDA, C++, CMake | Medium |
 | [Better Voxel Filter](#Better-Voxel-Filter) | C++ | Low|
-| [Bindings for Python](#Binding-interfaces) | C++, python, clang | Medium |
+| [Bindings for Python](#Bindings-for-Python) | C++, python, clang | Medium |
 | [Shift to fixed-width integers](#Shift-to-fixed-width-integers) | C++ | Low|
 | [Benchmarks and Performance monitoring](#Benchmarks-and-Performance-monitoring) | C++, Benchmarking, Github Worfklow | Medium-Low |
 
