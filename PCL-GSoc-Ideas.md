@@ -11,6 +11,27 @@ PCL returns to GSoC after a long hiatus. This year, PCL is looking for contribut
 
 and everything else in between.
 
+## 2021 Idea List
+2021 is a special year in the sense that the projects need to be much smaller. This potentially allows "easier" projects to be curated by the projects. Moreover, the reduced time requirement makes GSoC accessible to more students.
+### Table of Contents
+New Ideas
+| Name | Skills needed | Difficulty |
+|---|---|---|
+| [Enable CUDA builds on CI](#Enable-CUDA-builds-on-CI) | CUDA, C++, CMake | Medium |
+| [Better Voxel Filter](#Better-Voxel-Filter) | C++ | Low|
+| [Bindings for Python](#Binding-interfaces) | C++, python, clang | Medium |
+| [Shift to fixed-width integers](#Shift-to-fixed-width-integers) | C++ | Low|
+| [Benchmarks and Performance monitoring](#Benchmarks-and-Performance-monitoring) | C++, Benchmarking, Github Worfklow | Medium-Low |
+
+Older ideas under progress:
+| Name | Skills needed | Difficulty |
+|---|---|---|
+| [Compilation time reduction](#Compilation-time-reduction) | C++, C++ compilation, CMake | High |
+| [Improving confidence in builds](#Improving-confidence-in-builds) | Bash, Static Analyzers, GitHub Workflow | Low |
+| [Make a better CMake](#Make-a-better-CMake) | CMake | Medium |
+| [Refactoring and Modernization](#Refactoring-and-Modernization) | C++ | Low |
+| [Unified API for PCL algorithms](#Unified-API-for-PCL-algorithms) | C++ | Medium-High |
+
 ## 2020 Idea List
 
 ### Table of Contents
@@ -53,6 +74,11 @@ As the community grows, soft-skills and community outreach become more important
 ### Quality of Life (`QoL`)
 As PCL has matured, it has discovered missing features: features that are more than just the core code, features that are vital for delivering continuous improvements. We look forwards for the ideas/projects with a minor or negligible addition of "code features" as output. Some of the wish-list features are:
 #### Benchmarks and Performance monitoring
+**Mvieth** has started the work of adding benchmarks that can be run offline. The aim is two fold:
+  1. Increase coverage of benchmarks
+  2. Better integration of benchmarks
+
+While increasing coverage implies adding more (and better) benchmarks, a better integration would involve:
   * Nightly CI jobs to measure performance on `master`
   * (Stretch goal) Incremental bench-marking on PR
 #### Compilation time reduction
@@ -64,23 +90,40 @@ As PCL has matured, it has discovered missing features: features that are more t
     * PCH
     * Unity builds
 #### Improving confidence in builds
-  * Incremental builds on CI
-  * More warnings and sanitizers for CI
-  * Integrate `clang-tidy`, static-analyzers
-  * Increasing test coverage
-  * ABI/API breakage monitoring for PR
+This is a wide ranging topic, with something for everyone. This is broken into bite-sized projects, each with a unique challenge.
+  * Incremental builds on CI (Github Workflow)
+  * More warnings and sanitizers for CI (CMake, Compilers)
+  * Integrate `clang-tidy`, static-analyzers (C++ tooling, easier for new-comers)
+  * Increasing test coverage (C++)
+  * ABI/API breakage monitoring for PR (command line tools, scripting)
 #### Make a better CMake
   * More DRY, less wizardry
   * Automatic module discovery
   * Automatic test discovery (refactoring test code layout is ok)
   * Out-of-source PCL-contrib super-module similar to OpenCV-contrib
+#### Enable CUDA builds on CI
+A big issue with the CUDA and GPU libraries in PCL is the inability to test them on the CI. Thankfully, AMD (yes, you read that correct) has a solution: HiP. HiP compiler allows compilation of CUDA code to run on either AMD GPUs or even on the CPU. Thus, a test for CUDA can be compiled and run on the free tiers of CI which don't offer any GPU :)
+
+For more information, please refer to:
+* https://rocmdocs.amd.com/en/latest/Programming_Guides/Programming-Guides.html
+* https://rocmdocs.amd.com/en/latest/Programming_Guides/HIP-porting-guide.html
 
 ### Code Maintenance (`code`)
 Old API designs result in greater friction between how developers prefer to use vs how PCL lets developers use the API. Overhauling API used to be difficult but with `libtooling` and `clang-tidy`, it has been made manageable. Some of the ideas for guiding PCL towards a more modern API are:
 #### Refactoring and Modernization
-  * [Better type for indices](https://github.com/PointCloudLibrary/pcl/wiki/PCL-RFC-0002:-Better-type-for-indices)
   * Fluent style API for algorithms
   * Extend `format` and `clang-tidy --fix` to other modules
+#### Shift to fixed-width integers
+PCL used integer types like `int`, which make it hard to present a uniform interface on multiple platforms. As such, we're migrating slowly to fixed width types, with the first wave focused on the type of the indices used by PCL.
+  * [Better type for indices](https://github.com/PointCloudLibrary/pcl/wiki/PCL-RFC-0002:-Better-type-for-indices)
+  * [CI tracking the progress](https://github.com/PointCloudLibrary/pcl/blob/master/.ci/azure-pipelines/build/ubuntu_indices.yaml)
+#### Better Voxel Filter
+There are a number of voxel filters in PCL, with very similar code. Analysis of the code reveals that there are 3 orthogonal decisions taken in each implementation: 
+* Sub-divide the space into voxels (spherical, cubic)
+* Merge points (average, centroid, etc.)
+* Filter points based on some statistic (minimum count, stddev, etc.)
+
+A well written single implementation would be able to cover all the current classes, reduce bugs due to divergence of code as well as allow easy updates like parallelism and vectorization.
 
 ### New features (`new`)
 PCL is missing a lot of state-of-the-art implementations. Suggestions/implementations of such algorithms are highly welcome since highly performant, cutting edge algorithms are a core component of PCL. Apart from them, the following features are also on the wish-list of PCL:
@@ -96,6 +139,11 @@ Wrappers for (Python, Matlab/Octave, C) (1 project per wrapping isn't worth 3 mo
   * (Stretch goal) Support different PCL releases and Language versions
 #### Unified API for PCL algorithms
 Please find a detailed document [here](https://github.com/PointCloudLibrary/pcl/wiki/PCL-RFC-0003:-Unified-API-for-Algorithms)
+#### Bindings for Python
+This is a continuation of the 2020 GSoC. The 2020 GSoC involved a very deep dive into different strategies for auto-generating bindings with minimal effort. This would involve making the tooling better. While the [existing code](https://github.com/PointCloudLibrary/clang-bind) can't generate bindings, the goal is almost within reach. To generate bindings automatically, new development would need to be focused on:
+  * Generate list of files to read using `compile-commands.json`
+  * Generate dependency (for compilation) using [CMake File API](https://cmake.org/cmake/help/latest/manual/cmake-file-api.7.html)
+  * Convert Clang's AST into a Pybind11 compatible code
 
 ## Contact
 Please read [the relevant official guides](https://developers.google.com/open-source/gsoc/resources/guide) to ease your journey.
