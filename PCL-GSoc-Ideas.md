@@ -1,4 +1,4 @@
-# Ideas for GSoC
+# Ideas for GSoC/GSoD
 
 PCL returns to GSoC after a long hiatus. This year, PCL is looking for contributions and active community members from all corners of the coding community in the roles of
 * technical writers
@@ -11,7 +11,7 @@ PCL returns to GSoC after a long hiatus. This year, PCL is looking for contribut
 
 and everything else in between.
 
-## 2021 Idea List
+## 2021 GSoC Idea List
 2021 is a special year in the sense that the projects need to be much smaller. This potentially allows "easier" projects to be curated by the projects. Moreover, the reduced time requirement makes GSoC accessible to more students.
 ### Table of Contents
 New Ideas
@@ -32,7 +32,7 @@ Older ideas under progress:
 | [Refactoring and Modernization](#Refactoring-and-Modernization) | C++ | Low |
 | [Unified API for PCL algorithms](#Unified-API-for-PCL-algorithms) | C++ | Medium-High |
 
-## 2020 Idea List
+## 2021 GSoD Idea List
 
 ### Table of Contents
 | Name | Skills needed | Difficulty |
@@ -40,6 +40,12 @@ Older ideas under progress:
 | [Update outdated Website](#Update-outdated-Website) | RST, Sphinx, Doxygen, Python 	 | Medium |
 | [Walk through documentation](#Walk-through-documentation) | Technical writing, Doxygen | Medium |
 | [Reference Manual Documentation](#Reference-Manual-Documentation) | Technical writing, Doxygen, Sphinx | Low |
+
+## 2020 GSoC Idea List
+
+### Table of Contents
+| Name | Skills needed | Difficulty |
+|---|---|---| 
 | [Benchmarks and Performance monitoring](#Benchmarks-and-Performance-monitoring) | C++, Benchmarking | Medium-Low |
 | [Compilation time reduction](#Compilation-time-reduction) | C++, C++ compilation, CMake | High |
 | [Improving confidence in builds](#Improving-confidence-in-builds) | Bash, Static Analyzers | Low |
@@ -47,6 +53,15 @@ Older ideas under progress:
 | [Refactoring and Modernization](#Refactoring-and-Modernization) | C++ | Low |
 | [Binding interfaces for other languages](#Binding-interfaces) | C++, libtooling, pybind/cython,etc. | High |
 | [Unified API for PCL algorithms](#Unified-API-for-PCL-algorithms) | C++ | Medium-High |
+
+## 2020 GSoD Idea List
+
+### Table of Contents
+| Name | Skills needed | Difficulty |
+|---|---|---| 
+| [Update outdated Website](#Update-outdated-Website) | RST, Sphinx, Doxygen, Python 	 | Medium |
+| [Walk through documentation](#Walk-through-documentation) | Technical writing, Doxygen | Medium |
+| [Reference Manual Documentation](#Reference-Manual-Documentation) | Technical writing, Doxygen, Sphinx | Low |
 
 ### Project Maintenance (`proj`)
 As the community grows, soft-skills and community outreach become more important. With the change in community, it has become important to update the overlooked facet of PCL and make it more accessible to the community
