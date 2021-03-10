@@ -55,7 +55,7 @@ For point 2, you can do one of the following:
   * Configure and build PCL as required
   * Build all packages
 
-## Q: How do I build PCL with limited memory?
+## Q: How do I build PCL with limited storage space?
 
 A: Building PCL using CMake takes a lot of space:
 * All modules and features enabled (except VTK with Qt) including CUDA (Linux, x86)
