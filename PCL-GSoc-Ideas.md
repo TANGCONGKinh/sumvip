@@ -123,6 +123,12 @@ For more information, please refer to:
 * https://rocmdocs.amd.com/en/latest/Programming_Guides/Programming-Guides.html
 * https://rocmdocs.amd.com/en/latest/Programming_Guides/HIP-porting-guide.html
 
+Some repositories related to HiP are:
+* https://github.com/ROCm-Developer-Tools/HIPIFY (convert CUDA code to HiP code)
+* https://github.com/ROCm-Developer-Tools/HIP
+* https://github.com/ROCm-Developer-Tools/HIP-CPU
+* https://github.com/ROCm-Developer-Tools/HIP-Examples
+
 ### Code Maintenance (`code`)
 Old API designs result in greater friction between how developers prefer to use vs how PCL lets developers use the API. Overhauling API used to be difficult but with `libtooling` and `clang-tidy`, it has been made manageable. Some of the ideas for guiding PCL towards a more modern API are:
 #### Refactoring and Modernization
