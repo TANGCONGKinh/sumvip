@@ -82,7 +82,7 @@ $ .dev/scripts/generate_change.py --load FILENAME
 
 ![Top Right Corner](images/run-release.png)
 
-3. In the dialog, choose the correct branch/commit to run the pipeline on
+3. In the dialog, choose the correct branch/commit to run the pipeline on. If you're using a PR, use `refs/pull/<number>/merge` as the branch
 
 ![First Dialog](images/run-dialog.png)
 
