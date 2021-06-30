@@ -10,8 +10,8 @@
 - [ ] Go through all PR for the milestone
 - [ ] Create a pre-release via the release pipeline
 - [ ] (If needed) Revert whatever unintentional API/ABI breakage that might have occurred in the release branch
-- [ ] Once pre-release has fixed all issues, get ready for a release
-- [ ] Update Changelog
+- [ ] Fix issues exposed in pre-release
+- [ ] Update Changelog. Generate it via `.dev/scripts/generate_changelog.py`
 - [ ] Bump version via `.dev/scripts/bump_release.bash X.Y.Z`
 - [ ] Commit, push, merge and run the release pipeline again
 - [ ] Send announcements to the community forums
