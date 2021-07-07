@@ -81,7 +81,7 @@ $ .dev/scripts/generate_change.py --load FILENAME
 
 ![All Pipelines](images/all-pipelines.png)
 
-2. Find the `Run Pipeline` button for the Release pipeline
+2. Find the `Run Pipeline` button for the Release pipeline. If the button is not available, please click the hamburger/3-dot button next to `Edit` to enable the pipeline. If this was done, please remember to disable the pipeline after starting your run.
 
 ![Top Right Corner](images/run-release.png)
 
