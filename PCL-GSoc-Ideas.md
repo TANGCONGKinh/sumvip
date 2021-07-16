@@ -170,13 +170,13 @@ This is a continuation of the 2020 GSoC. The 2020 GSoC involved a very deep dive
 Please read [the relevant official guides](https://developers.google.com/open-source/gsoc/resources/guide) to ease your journey.
 
 For interested students:
-* Please announce yourself and your interest in PCL at the [gitter chat](https://gitter.im/PointCloudLibrary/pcl) 
+* Please announce yourself and your interest in PCL at the [discord channel](https://discord.gg/JFFMAXS) 
 * Please have a draft proposal ready in the format of a git-repo/google doc to facilitate discussion
 * Based on your interests, you will be assigned a small task to evaluate your skills
 
 For those interested in becoming mentors:
 * Please note that mentoring and co-mentoring can take a lot of effort from your side (from 10 hours a week or 1 hour a week depending on the project, the student, the problems, etc.)
-* Please announce yourself and participate in discussions at the [gitter chat](https://gitter.im/PointCloudLibrary/pcl)
+* Please announce yourself and participate in discussions at the [discord channel](https://discord.gg/JFFMAXS)
 * Feel free to PM existing maintainers/mentors
 * "Teaming up" as co-mentors is an option if you feel you will not be able to be the sole mentor on a project. For projects with existing mentor(s), it is upto them to accept/reject a co-mentor
 
@@ -189,12 +189,12 @@ and others
 
 ## Resources
 ### Ideas Pages
-If any of the following ideas are not implemented, please notify [kunaltyagi](https://github.com/kunaltyagi) on Gitter using [PM](https://gitter.im/kunaltyagi) or [PCL chatroom](https://gitter.im/PointCloudLibrary/pcl). They will be added to the ideas list.
+If any of the following ideas are not implemented, please notify [kunaltyagi](https://github.com/kunaltyagi) on the [discord channel](https://discord.gg/JFFMAXS). They will be added to the ideas list.
 * [Discussion on Ideas for GSoC 2011](http://www.pcl-developers.org/two-more-projects-for-GSOC-tt4645184.html#none)
 * [Ideas page for GSoC 2011](https://web.archive.org/web/20130314145536/http://www.pointclouds.org:80/gsoc2011/ideas.html)
 <!-- * [Ideas page for GSoC 2014](http://www.pointclouds.org/gsoc/) State of the art is Deep Learning -->
 ### Project Pages
-If any of the following projects are not integrated in PCL, please notify [kunaltyagi](https://github.com/kunaltyagi) on Gitter using [PM](https://gitter.im/kunaltyagi) or [PCL chatroom](https://gitter.im/PointCloudLibrary/pcl). They will be slated for review and addition in PCL-core (if maintainers are found) or PCL contrib (like opencv-contrib) (if there is a lack of maintainers)
+If any of the following projects are not integrated in PCL, please notify [kunaltyagi](https://github.com/kunaltyagi) on [discord channel](https://discord.gg/JFFMAXS). They will be slated for review and addition in PCL-core (if maintainers are found) or PCL contrib (like opencv-contrib) (if there is a lack of maintainers)
 * [GSoC 2011](http://www.pointclouds.org/blog/gsoc/)
 * [GSoC 2012](https://web.archive.org/web/20121009031358/http://pointclouds.org:80/news/pcl-gsoc-kickstart.html)
 * [GSoC 2014](http://www.pointclouds.org/blog/gsoc14/index.php)
