@@ -53,7 +53,8 @@ For point 2, you can do one of the following:
   * Clone PCL in desired workspace
   * Add a package.xml in `pcl` directory. A sample package.xml can be found [here](https://github.com/kunaltyagi/packages.xml)
   * Configure and build PCL as required
-  * Build all packages
+  * Build all packages dependent on PCL (such as `pcl_ros`, etc.)
+  * Source the appropriate `setup` file, and set this workspace as an underlay for your actual workspace
 
 ## Q: How do I build PCL with limited storage space?
 
