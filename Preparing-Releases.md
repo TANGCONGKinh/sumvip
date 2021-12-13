@@ -9,7 +9,7 @@
 # Task list
 - [ ] Go through all PR for the milestone
 - [ ] Generate changelog via `.dev/scripts/generate_changelog.py`
-- [ ] Create a pre-release via the release pipeline
+- [ ] Create a pre-release via [the release pipeline](#running-the-release-pipeline)
 - [ ] Announce to community for testing
 - [ ] (For minor release only) Revert whatever unintentional API/ABI breakage that might have occurred in the release branch
 - [ ] Fix issues exposed in pre-release
