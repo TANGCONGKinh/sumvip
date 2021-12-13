@@ -8,7 +8,7 @@
 
 # Task list
 - [ ] Go through all PR for the milestone
-- [ ] Generate changelog via `.dev/scripts/generate_changelog.py`
+- [ ] Generate PR for upgrading [CHANGES.md](https://github.com/PointCloudLibrary/pcl/blob/master/CHANGES.md) with the help of [`.dev/scripts/generate_changelog.py`](https://github.com/PointCloudLibrary/pcl/blob/master/.dev/scripts/generate_changelog.py)
 - [ ] Create a pre-release via [the release pipeline](#running-the-release-pipeline)
 - [ ] Announce to community for testing
 - [ ] (For minor release only) Revert whatever unintentional API/ABI breakage that might have occurred in the release branch
