@@ -8,8 +8,11 @@ For contributors interested in PCL:
 * Please have a draft proposal ready in the format of a **git-repo/google doc** to facilitate discussion
     * During the selection and submission phase, mentors often communicate with the candidates on the proposal merits/feasibility
     * Having a format where adding comments in-line with content is easy makes this communication quick and easy
-    * Proposals not in a google doc or git will not be entertained
-* Based on your interests, you will be assigned a small task to evaluate your skills
+    * **Proposals not in a google doc or git will not be entertained**
+* Based on your interests, you will be assigned a small task to evaluate your skills.
+    * You can also **get started** on a task of your choice taken from [the list of good first issues](https://github.com/PointCloudLibrary/pcl/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22good+first+issue%22)
+    * Please **comment in the issue when you start working on it**, so that multiple people aren't working on the same thing
+    * Please work on **one issue at a time**
 
 # Mentors
 
