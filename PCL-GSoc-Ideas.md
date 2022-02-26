@@ -1,6 +1,6 @@
 # Ideas for GSoC/GSoD
 
-PCL returns to GSoC after a long hiatus. This year, PCL is looking for contributions and active community members from all corners of the coding community in the roles of
+PCL returned to GSoC after a long hiatus in 2019. This year, PCL is looking for contributions and active community members from all corners of the coding community in the roles of
 * technical writers
 * designers
 * web developers
@@ -11,6 +11,24 @@ PCL returns to GSoC after a long hiatus. This year, PCL is looking for contribut
 
 and everything else in between.
 
+## 2022 GSoC Idea List
+
+2022 brings in a new format of projects: they can be either short as well as long term projects. Unlike 2021, the long term allows projects which require more time investment
+
+### Table of Contents
+New Ideas:
+| Name | Skills needed | Difficulty |
+|---|---|---|
+| [Integration of Better Filtering from GSoC 2021] | C++ | Medium |
+| [Benchmarks and Performance monitoring](#Benchmarks-and-Performance-monitoring) | C++, Benchmarking, Github Worfklow | Medium-Low |
+
+Older ideas with some existing work:
+| Name | Skills needed | Difficulty |
+|---|---|---|
+| [Compilation time reduction](#Compilation-time-reduction) | C++, C++ compilation, CMake | High |
+| [Bindings for Python](#Bindings-for-Python) | C++, python, clang | Medium |
+| [Improving confidence in builds](#Improving-confidence-in-builds) | Bash, Static Analyzers, GitHub Workflow | Low |
+
 ## 2021 GSoC Idea List
 2021 is a special year in the sense that the projects need to be much smaller. This potentially allows "easier" projects to be curated by the projects. Moreover, the reduced time requirement makes GSoC accessible to more students.
 ### Table of Contents
@@ -18,12 +36,12 @@ New Ideas
 | Name | Skills needed | Difficulty |
 |---|---|---|
 | [Enable CUDA builds on CI](#Enable-CUDA-builds-on-CI) | CUDA, C++, CMake | Medium |
-| [Better Voxel Filter](#Better-Voxel-Filter) | C++ | Low|
+| [Better Voxel Filter](#Better-Voxel-Filter) | C++ | Low |
 | [Bindings for Python](#Bindings-for-Python) | C++, python, clang | Medium |
 | [Shift to fixed-width integers](#Shift-to-fixed-width-integers) | C++ | Low|
 | [Benchmarks and Performance monitoring](#Benchmarks-and-Performance-monitoring) | C++, Benchmarking, Github Worfklow | Medium-Low |
 
-Older ideas under progress:
+Older ideas with some existing work:
 | Name | Skills needed | Difficulty |
 |---|---|---|
 | [Compilation time reduction](#Compilation-time-reduction) | C++, C++ compilation, CMake | High |
