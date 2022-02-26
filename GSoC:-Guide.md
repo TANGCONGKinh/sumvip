@@ -24,6 +24,11 @@ For those interested in becoming mentors:
 
 TODO
 
+Alphabetic list of current maintainers (2022):
+* kunaltyagi
+* larshg
+* mvieth
+
 # Idea List
 
 The past and present idea list is available [here](https://github.com/PointCloudLibrary/pcl/wiki/PCL-GSoc-Ideas)
