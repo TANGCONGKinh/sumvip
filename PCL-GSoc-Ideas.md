@@ -11,9 +11,18 @@ PCL returned to GSoC after a long hiatus in 2019. This year, PCL is looking for 
 
 and everything else in between.
 
-## 2022 GSoC Idea List
+## 2022 GSoD Idea List
 
-2022 brings in a new format of projects: they can be either short as well as long term projects. Unlike 2021, the long term allows projects which require more time investment
+### Table of Contents
+| Name | Skills needed | Difficulty |
+|---|---|---| 
+| [Update Website](#Update-Website) | RST, Sphinx, Doxygen, Python 	 | Medium |
+| [Walk through documentation](#Walk-through-documentation) | Technical writing, Doxygen | Medium |
+| [Reference Manual Documentation](#Reference-Manual-Documentation) | Technical writing, Doxygen, Sphinx | Low |
+
+## 2022 GSoC Idea List (not used)
+
+2022 brings in a new format of projects: they can be either short as well as long term projects. Unlike 2021, the long term allows projects which require more time investment.
 
 ### Table of Contents
 New Ideas:
@@ -50,12 +59,12 @@ Older ideas with some existing work:
 | [Refactoring and Modernization](#Refactoring-and-Modernization) | C++ | Low |
 | [Unified API for PCL algorithms](#Unified-API-for-PCL-algorithms) | C++ | Medium-High |
 
-## 2021 GSoD Idea List
+## 2021 GSoD Idea List (not used)
 
 ### Table of Contents
 | Name | Skills needed | Difficulty |
 |---|---|---| 
-| [Update outdated Website](#Update-outdated-Website) | RST, Sphinx, Doxygen, Python 	 | Medium |
+| [Update Website](#Update-Website) | RST, Sphinx, Doxygen, Python 	 | Medium |
 | [Walk through documentation](#Walk-through-documentation) | Technical writing, Doxygen | Medium |
 | [Reference Manual Documentation](#Reference-Manual-Documentation) | Technical writing, Doxygen, Sphinx | Low |
 
@@ -72,33 +81,34 @@ Older ideas with some existing work:
 | [Binding interfaces for other languages](#Binding-interfaces) | C++, libtooling, pybind/cython,etc. | High |
 | [Unified API for PCL algorithms](#Unified-API-for-PCL-algorithms) | C++ | Medium-High |
 
-## 2020 GSoD Idea List
+## 2020 GSoD Idea List (not used)
 
 ### Table of Contents
 | Name | Skills needed | Difficulty |
 |---|---|---| 
-| [Update outdated Website](#Update-outdated-Website) | RST, Sphinx, Doxygen, Python 	 | Medium |
+| [Update Website](#Update-Website) | RST, Sphinx, Doxygen, Python 	 | Medium |
 | [Walk through documentation](#Walk-through-documentation) | Technical writing, Doxygen | Medium |
 | [Reference Manual Documentation](#Reference-Manual-Documentation) | Technical writing, Doxygen, Sphinx | Low |
 
 ### Project Maintenance (`proj`)
 As the community grows, soft-skills and community outreach become more important. With the change in community, it has become important to update the overlooked facet of PCL and make it more accessible to the community
-#### Update outdated Website
+#### Update Website
   * Create a static website on Github pages or similar
-  * Provide a basic replacement including:
-    * documentation for past releases
+  * Provide better support for documentation:
+    * allow viewing past releases
     * prevent invalidation of links as much as possible, while updating the content
-  * Make it the new home for `pointclouds.org` with HTTPS support
-  * Integrate versioned (documentation+tutorials) to make it the go-to resource for PCL
+  * Integrate with RTD (documentation+tutorials) to make it the go-to resource for PCL
+  * Allow easy additions of blogs including general updates, GSoC/GSoD
+    * (if possible) RSS feed
   * (Stretch goal) Migrate all content from existing website, including 
     * ability to create blog posts (using Jekyll or similar)
     * lost content (from internet archives)
 #### Walk through documentation
-[Summer of Docs focus] Includes Tutorials, Guides and Examples
+Includes Tutorials, Guides and Examples
   * Update to reflect forward movement in PCL
   * Detect and increase coverage
 #### Reference Manual Documentation
-  * [Summer of Docs focus] Improve documentation coverage
+  * Improve documentation coverage
   * Migrate front-end to sphinx
   * Generate and host all documentation on Github
   * Integrate search + landing page with Tutorials and Walk-through
